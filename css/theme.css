@@ -1,0 +1,61 @@
+:root,
+::backdrop {
+	/* Default (light) theme */
+	--bg: #fff;
+	--accent-bg: #f5f7ff;
+	--text: #7B0A81;
+	--text-light: #E704B6;
+	--border: #F9D8E7;
+	--accent: #F614B7;
+	--accent-hover: #FFB6ED;
+	--accent-text: var(--bg);
+	--code: #7B0A81;
+	--preformatted: #444;
+	--marked: #FFB6ED;
+	--disabled: #efefef;
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+	:root,
+	::backdrop {
+		color-scheme: dark;
+		--bg: #190A28;
+		--accent-bg: #3D043A;
+		--text: #dcdcdc;
+		--text-light: #ababab;
+		--accent: #F614B7;
+		--accent-hover: #FFB6ED;
+		--accent-text: var(--bg);
+		--code: #f06292;
+		--preformatted: #ccc;
+		--disabled: #111;
+	}
+	/* Add a bit of transparency so light media isn't so glaring in dark mode */
+	img,
+	video {
+		opacity: 0.8;
+	}
+}
+
+article {
+	border: none;
+}
+
+article.video img {
+}
+
+p {
+	text-align: justify;
+}
+
+footer,
+footer p {
+	text-align: center;
+}
+
+main > h1,
+main > h2,
+main > h3 {
+	text-align: center;
+}
