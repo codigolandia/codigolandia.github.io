@@ -1,40 +1,43 @@
 :root,
 ::backdrop {
-	/* Default (light) theme */
-	--bg: #fff;
-	--accent-bg: #f5f7ff;
-	--text: #7B0A81;
-	--text-light: #E704B6;
-	--border: #F9D8E7;
-	--accent: #F614B7;
-	--accent-hover: #FFB6ED;
-	--accent-text: var(--bg);
-	--code: #7B0A81;
-	--preformatted: #444;
-	--marked: #FFB6ED;
-	--disabled: #efefef;
-}
+	/* Color Palette */
+	--color-black: #000;
+	--color-white: #FFF;
+	--color-light-gray: #E0E0E0;
+	--color-neon-purple-light: #BE4FEF;
+	--color-neon-purple: #B206FF;
+	--color-neon-purple-dark: #9A00F2;
+	--color-neon-purple-darker: #6A0099;
 
-/* Dark theme */
+	--bg: var(--color-black);
+	--accent-bg: var(--color-neon-purple-darker);
+	--text: var(--color-white);
+	--text-light: var(--color-light-gray) ;
+	--border: var(--color-neon-purple);
+	--accent: var(--color-neon-purple);
+	--accent-hover: var(--color-neon-purple-light);
+	--accent-text: var(--color-black);
+	--code: var(--color-neon-purple-darker);
+	--preformatted: var(--color-neon-purple-darker);
+	--marked: var(--color-neon-purple);
+	--disabled: var(--color-light-gray);
+}
 @media (prefers-color-scheme: dark) {
 	:root,
 	::backdrop {
 		color-scheme: dark;
-		--bg: #190A28;
-		--accent-bg: #3D043A;
-		--text: #dcdcdc;
-		--text-light: #ababab;
-		--accent: #F614B7;
-		--accent-hover: #FFB6ED;
-		--accent-text: var(--bg);
-		--code: #f06292;
-		--preformatted: #ccc;
-		--disabled: #111;
-	}
-	/* Add a bit of transparency so light media isn't so glaring in dark mode */
-	img,
-	video {
-		opacity: 0.8;
+		--bg: var(--color-black);
+		--accent-bg: var(--color-neon-purple-darker);
+		--text: var(--color-white);
+		--text-light: var(--color-light-gray) ;
+		--border: var(--color-neon-purple);
+		--accent: var(--color-neon-purple);
+		--accent-hover: var(--color-neon-purple-light);
+		--accent-text: var(--color-black);
+		--code: var(--color-neon-purple-darker);
+		--preformatted: var(--color-neon-purple-darker);
+		--marked: var(--color-neon-purple);
+		--disabled: var(--color-light-gray);
 	}
 }
 
@@ -45,17 +48,14 @@ article {
 article.video img {
 }
 
-p {
+main p {
 	text-align: justify;
 }
 
-footer,
-footer p {
+footer, footer p {
 	text-align: center;
 }
 
-main > h1,
-main > h2,
-main > h3 {
+main > h1, main > h2, main > h3, main > h4, main > h5, main > h6 {
 	text-align: center;
 }
