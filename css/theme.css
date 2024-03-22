@@ -4,18 +4,20 @@
 	--color-black: #000;
 	--color-white: #FFF;
 	--color-light-gray: #E0E0E0;
+	--color-dark-blue: #100E34;
+	--color-neon-light: #F9DAE6;
 	--color-neon-purple-light: #BE4FEF;
 	--color-neon-purple: #B206FF;
 	--color-neon-purple-dark: #9A00F2;
 	--color-neon-purple-darker: #6A0099;
 
 	--bg: var(--color-black);
-	--accent-bg: var(--color-neon-purple-darker);
+	--accent-bg: var(--color-dark-blue);
 	--text: var(--color-white);
 	--text-light: var(--color-light-gray) ;
-	--border: var(--color-neon-purple);
+	--border: var(--color-neon-light);
 	--accent: var(--color-neon-purple);
-	--accent-hover: var(--color-neon-purple-light);
+	--accent-hover: var(--color-neon-light);
 	--accent-text: var(--color-black);
 	--code: var(--color-neon-purple-darker);
 	--preformatted: var(--color-neon-purple-darker);
@@ -27,10 +29,10 @@
 	::backdrop {
 		color-scheme: dark;
 		--bg: var(--color-black);
-		--accent-bg: var(--color-neon-purple-darker);
+		--accent-bg: var(--color-dark-blue);
 		--text: var(--color-white);
 		--text-light: var(--color-light-gray) ;
-		--border: var(--color-neon-purple);
+		--border: var(--color-neon-light);
 		--accent: var(--color-neon-purple);
 		--accent-hover: var(--color-neon-purple-light);
 		--accent-text: var(--color-black);
@@ -43,9 +45,6 @@
 
 article {
 	border: none;
-}
-
-article.video img {
 }
 
 main p {
@@ -70,4 +69,9 @@ img.logo {
 
 header h1.title {
 	font-family: monospace;
+	text-shadow: 0px 0px 20px var(--accent);
+}
+
+body>header {
+	box-shadow: 0px 0px 14px 8px var(--accent);
 }
