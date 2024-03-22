@@ -4,20 +4,20 @@
 	--color-black: #000;
 	--color-white: #FFF;
 	--color-light-gray: #E0E0E0;
-	--color-dark-blue: #100E34;
-	--color-neon-light: #F9DAE6;
+	--color-dark-purple: #0E0613;
+	--color-neon-pink: #F61EB3;
 	--color-neon-purple-light: #BE4FEF;
 	--color-neon-purple: #B206FF;
 	--color-neon-purple-dark: #9A00F2;
 	--color-neon-purple-darker: #6A0099;
 
-	--bg: var(--color-black);
-	--accent-bg: var(--color-dark-blue);
+	--bg: var(--color-dark-purple);
+	--accent-bg: var(--color-black);
 	--text: var(--color-white);
 	--text-light: var(--color-light-gray) ;
-	--border: var(--color-neon-light);
+	--border: var(--color-neon-pink);
 	--accent: var(--color-neon-purple);
-	--accent-hover: var(--color-neon-light);
+	--accent-hover: var(--color-neon-pink);
 	--accent-text: var(--color-black);
 	--code: var(--color-neon-purple-darker);
 	--preformatted: var(--color-neon-purple-darker);
@@ -28,11 +28,11 @@
 	:root,
 	::backdrop {
 		color-scheme: dark;
-		--bg: var(--color-black);
-		--accent-bg: var(--color-dark-blue);
+		--bg: var(--color-dark-purple);
+		--accent-bg: var(--color-black);
 		--text: var(--color-white);
 		--text-light: var(--color-light-gray) ;
-		--border: var(--color-neon-light);
+		--border: var(--color-neon-pink);
 		--accent: var(--color-neon-purple);
 		--accent-hover: var(--color-neon-purple-light);
 		--accent-text: var(--color-black);
@@ -69,9 +69,9 @@ img.logo {
 
 header h1.title {
 	font-family: monospace;
-	text-shadow: 0px 0px 20px var(--accent);
 }
 
 body>header {
-	box-shadow: 0px 0px 30px 5px var(--accent);
+	box-shadow: 0px 0px 15px 5px var(--accent);
+	border-bottom-width: 2px;
 }
